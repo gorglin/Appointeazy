@@ -10,11 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="js/main.js"></script>
     <header>
-        <div class="brand">
-            <h1>Appoint<span class="highlight">Eazy</span></h1>
-            <p class="tagline">Healthcare on Your Schedule</p>
-        </div>
+        <nav class="main-nav">
+            <div class="brand">
+                <h1>Appoint<span class="highlight">Eazy</span></h1>
+                <p class="tagline">Healthcare on Your Schedule</p>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clinical-practices.html" class="active">Clinical Practices</a></li>
+                <li><a href="finding-doctor.html">Finding a Doctor</a></li>
+            </ul>
+        </nav>
         <div class="login-area">
             <h2>Login</h2>
             <form>
@@ -30,58 +41,58 @@
             <div class="practice-types">
                 <div class="practice-category">
                     <h3>Primary Care Practices</h3>
-                    <div class="practice-item">
+                    <a href="practices/family-medicine.html" class="practice-item">
                         <h4>Family Medicine</h4>
                         <p>Provides comprehensive healthcare for all family members, from newborns to elderly. These physicians handle preventive care, routine checkups, and manage chronic conditions.</p>
-                    </div>
-                    <div class="practice-item">
+                    </a>
+                    <a href="practices/internal-medicine.html" class="practice-item">
                         <h4>Internal Medicine</h4>
                         <p>Focuses on adult medicine, managing complex medical conditions and providing preventive care for adults. Often coordinates care with specialists.</p>
-                    </div>
-                    <div class="practice-item">
+                    </a>
+                    <a href="practices/pediatrics.html" class="practice-item">
                         <h4>Pediatrics</h4>
                         <p>Specializes in the care of children from birth through adolescence, including developmental monitoring, vaccinations, and treating childhood illnesses.</p>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="practice-category">
                     <h3>Specialty Practices</h3>
-                    <div class="practice-item">
+                    <a href="practices/cardiology.html" class="practice-item">
                         <h4>Cardiology</h4>
                         <p>Focuses on heart health, treating conditions like high blood pressure, heart disease, and conducting cardiac procedures.</p>
-                    </div>
-                    <div class="practice-item">
+                    </a>
+                    <a href="practices/dermatology.html" class="practice-item">
                         <h4>Dermatology</h4>
                         <p>Treats skin conditions, performs skin cancer screenings, and provides cosmetic treatments.</p>
-                    </div>
-                    <div class="practice-item">
+                    </a>
+                    <a href="practices/orthopedics.html" class="practice-item">
                         <h4>Orthopedics</h4>
                         <p>Specializes in musculoskeletal conditions, treating bone and joint issues, sports injuries, and performing surgeries.</p>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="practice-category">
                     <h3>Mental Health Practices</h3>
-                    <div class="practice-item">
+                    <a href="practices/psychiatry.html" class="practice-item">
                         <h4>Psychiatry</h4>
                         <p>Diagnoses and treats mental health conditions through medication management and therapy.</p>
-                    </div>
-                    <div class="practice-item">
+                    </a>
+                    <a href="practices/psychology.html" class="practice-item">
                         <h4>Psychology</h4>
                         <p>Provides counseling and therapy services for mental health, behavioral issues, and personal development.</p>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="practice-category">
                     <h3>Alternative Medicine Practices</h3>
-                    <div class="practice-item">
+                    <a href="practices/acupuncture.html" class="practice-item">
                         <h4>Acupuncture</h4>
                         <p>Traditional Chinese medicine practice using needle therapy to treat various conditions and manage pain.</p>
-                    </div>
-                    <div class="practice-item">
+                    </a>
+                    <a href="practices/chiropractic.html" class="practice-item">
                         <h4>Chiropractic Care</h4>
                         <p>Focuses on spinal manipulation and body alignment to treat pain and improve overall health.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
