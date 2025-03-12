@@ -238,7 +238,9 @@ main {
     }
 }
 
-/* Policy Pages Styles */
+/* Content Pages Styles */
+.practice-types,
+.guide-content,
 .content-section {
     max-width: 800px;
     margin: 2rem auto;
@@ -259,10 +261,13 @@ main {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.policy-content h3 {
+.policy-content h3,
+.practice-category h3,
+.guide-section h3 {
     color: #ff9800;
     margin: 1.5rem 0 1rem;
     font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .policy-content h3:first-child {
@@ -286,6 +291,83 @@ main {
 }
 
 /* Footer Styles */
+/* Practice Types Styles */
+.practice-category {
+    margin-bottom: 2rem;
+}
+
+.practice-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.practice-item:hover {
+    transform: translateY(-2px);
+}
+
+.practice-item h4 {
+    color: #ff5722;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Guide Content Styles */
+.guide-section {
+    margin-bottom: 2.5rem;
+}
+
+.checklist-item,
+.question-category,
+.warning-signs,
+.decision-tips {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.guide-section h4 {
+    color: #ff5722;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.guide-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.guide-section ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+    color: #666;
+}
+
+.guide-section ul li::before {
+    content: '•';
+    color: #ff9800;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.warning-signs ul li::before {
+    content: '⚠️';
+}
+
+.decision-tips ul li::before {
+    content: '✓';
+    color: #4CAF50;
+}
+
 footer {
     background-color: #ffcc80;
     text-align: center;
