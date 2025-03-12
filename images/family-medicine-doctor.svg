@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f9f9f9" rx="20" ry="20"/>
+  
+  <!-- Doctor figure -->
+  <g transform="translate(200, 200)">
+    <!-- Head -->
+    <circle cx="0" cy="-80" r="50" fill="#f0d0b0"/>
+    
+    <!-- Hair -->
+    <path d="M-50,-80 Q-55,-120 -30,-135 Q-10,-145 0,-145 Q10,-145 30,-135 Q55,-120 50,-80 Q40,-95 30,-100 Q15,-105 0,-105 Q-15,-105 -30,-100 Q-40,-95 -50,-80" fill="#a67c52"/>
+    
+    <!-- Face -->
+    <ellipse cx="-15" cy="-80" rx="4" ry="6" fill="#333"/>
+    <ellipse cx="15" cy="-80" rx="4" ry="6" fill="#333"/>
+    <path d="M-10,-60 Q0,-50 10,-60" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Lab coat -->
+    <path d="M-50,-30 L-70,100 L-30,100 L-20,0 L20,0 L30,100 L70,100 L50,-30 Q25,-40 0,-40 Q-25,-40 -50,-30" fill="#fff" stroke="#eee" stroke-width="2"/>
+    
+    <!-- Shirt -->
+    <path d="M-20,-30 L-20,0 L20,0 L20,-30" fill="#c8e6c9"/>
+    
+    <!-- Neck -->
+    <path d="M-10,-30 L-10,-10 L10,-10 L10,-30" fill="#f0d0b0"/>
+    
+    <!-- Stethoscope -->
+    <path d="M0,-10 Q-30,30 -20,60 Q-15,80 0,80 Q15,80 20,60 Q30,30 0,-10" fill="none" stroke="#4caf50" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="70" r="6" fill="#4caf50"/>
+    
+    <!-- ID Badge -->
+    <rect x="-15" y="10" width="30" height="40" rx="3" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+    <rect x="-10" y="15" width="20" height="15" fill="#fff"/>
+    <line x1="-8" y1="35" x2="8" y2="35" stroke="#333" stroke-width="1"/>
+    <line x1="-8" y1="40" x2="8" y2="40" stroke="#333" stroke-width="1"/>
+  </g>
+  
+  <!-- Family symbols -->
+  <g transform="translate(70, 70)">
+    <!-- Adult figure -->
+    <circle cx="-15" cy="-15" r="10" fill="#4caf50" opacity="0.6"/>
+    <path d="M-15,-5 L-15,15" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    <path d="M-15,0 L-25,10" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    <path d="M-15,0 L-5,10" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Adult figure -->
+    <circle cx="15" cy="-15" r="10" fill="#4caf50" opacity="0.6"/>
+    <path d="M15,-5 L15,15" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    <path d="M15,0 L5,10" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    <path d="M15,0 L25,10" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Child figure -->
+    <circle cx="0" cy="5" r="7" fill="#4caf50" opacity="0.6"/>
+    <path d="M0,12 L0,25" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    <path d="M0,15 L-7,22" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+    <path d="M0,15 L7,22" stroke="#4caf50" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Text "Family Medicine" -->
+  <g transform="translate(200, 350)">
+    <rect x="-100" y="-15" width="200" height="30" rx="15" fill="#4caf50" opacity="0.1"/>
+  </g>
+</svg>
