@@ -1,0 +1,318 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #ffcc80 0%, #ff9800 100%);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand {
+    margin-bottom: 2rem;
+}
+
+.brand h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #444;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    color: #ff5722;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0.5rem 0 0;
+    font-weight: 400;
+}
+
+.login-area {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.login-area h2 {
+    color: #444;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.login-area form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-area input {
+    padding: 12px;
+    border: 2px solid #ffcc80;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.login-area input:focus {
+    outline: none;
+    border-color: #ff9800;
+    box-shadow: 0 0 0 3px rgba(255,152,0,0.2);
+}
+
+.login-area button {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-area button:hover {
+    background-color: #f57c00;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Intro Content Styles */
+.intro-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.intro-content h2 {
+    text-align: center;
+    color: #444;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.intro-text {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.intro-text p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+.key-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.benefit-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.benefit-item h3 {
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.benefit-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Intro Section */
+@media (max-width: 1024px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .key-benefits {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+.faq {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #444;
+    font-size: 2rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.faq-item h3 {
+    color: #ff9800;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Make FAQ section responsive */
+@media (max-width: 1024px) {
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+@media (max-width: 640px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+/* Policy Pages Styles */
+.content-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content-section h2 {
+    text-align: center;
+    color: #444;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.policy-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.policy-content h3 {
+    color: #ff9800;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+.policy-content h3:first-child {
+    margin-top: 0;
+}
+
+.policy-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.policy-content ul {
+    color: #666;
+    margin: 0 0 1.5rem 1.5rem;
+    line-height: 1.6;
+}
+
+.policy-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffcc80;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-nav {
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    color: #444;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+    color: #ff5722;
+}
+
+footer p {
+    color: #666;
+    margin: 0;
+}
